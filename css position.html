@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Css position</title>
+	<style type="text/css">
+		body {
+			margin: 0;
+			height: 1500px;
+		}
+
+		.box1 {
+			width: 200px;
+			height: 120px;
+			background: green;
+			position: relative;
+
+			margin: auto;
+			margin-top: 50px;
+
+		}
+
+		.box2 {
+			width: 80px;
+			height: 65px;
+			background: red;
+			margin-top: 5px;
+			position: absolute;
+			left: 58px;
+			top: 25px;
+			border-radius: 50%
+		}
+
+		.box3 {
+			width: 50px;
+			height: 40px;
+			background: #dcc6ce;
+			position: absolute;
+			left: 13px;
+			top: 11px;
+			border-radius: 50%
+		}
+
+		.box4 {
+			width: 100%;
+			height: 120px;
+			background: blue;
+			position: fixed;
+			opacity: 0.7;
+			margin-top: 15px;
+
+		}
+
+		.c,
+		.a,
+		.h {
+			color: white;
+		}
+
+		.box5 {
+			position: absolute;
+			top: 285px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box1">1
+		<div class="box2">2
+			<div class="box3">3
+
+			</div>
+		</div>
+	</div>
+
+	<div class="box4">
+		<a class="h" href="table.html">Home</a>
+		<a class="a" href="transition.html">About</a>
+		<a class="c" " href="imgbg31.html ">Contact</a>
+	</div>
+	<div class="box5 ">
+	<h2>This is css position, static, relative, absolute, fixed. 1</h2>
+	<h3>This is css position, static, relative, absolute, fixed. 2</h3>
+	<h4>This is css position, static, relative, absolute, fixed. 3</h4>
+	</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Text Direction-17</title>
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+</head>
+<body>
+	<!-- direction, right to left-->
+	<h2 dir="rtl">This is a simple paragraph</h2>
+	<!-- direction,left to right -->
+	<h2 dir="ltr">This is a simple paragraph</h2>
+	<!-- direction, bdo rtl -->
+	<h2> <bdo dir="rtl">This is a simple paragraph</bdo></h2>
+	<img src="pic/b.jpg" alt="" />
+	
+	<iframe width="820" height="315" src="http://youtube.com/embed/TsmX3J1SNoE" frameborder="20" allowfulscreen></iframe><br />
+	
+	<input type="button" value="System Date & Time" onclick="get_date();" />	
+	<div id="d1"></div>
+	<script type="text/javascript">
+	function get_date(){
+	document.getElementById('d1').innerHTML=new Date();
+	}	
+	</script>
+	<input type="datetime-local" value="Time" />
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+ <html lang="en-US">
+ <head> 
+ <meta charset="UTF-8"> 
+ <title>Transition-44</title>
+ <style type="text/css">
+ 
+ .block1{height:200px;
+		 width:200px;
+		 background-color:#E91E63;
+		 border-radius:70px;
+		 margin:500px; 
+		 transition:all 5s cubic-bezier(1,0,0,1);}
+
+ .block1:hover{background-color:red;
+				height:50px;
+				width:50px;
+				transform:skew(350deg) scale(1.1);}
+				
+ p{color:red;} 
+ 
+ p:hover{background-color:green;
+		 width:400px;
+		 height:50px;} 			 	
+ </style> 	
+ <!--  transform:skewX(180deg);
+	 transform:scale(2,3); 		      
+	 transform:rotate(360deg); -->
+	 
+ <!-- transition:background-color 1s,
+		width 3s ease; --> 
+ </head>
+ 
+ <body> 
+ 
+ <div class="block1">hover & transition</div> 	
+ <p>This is a test paragraph</p>
+ 
+ </body>
+ 
+ </html>

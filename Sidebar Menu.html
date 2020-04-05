@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Side bar Menu-codingflag</title>
+	<style type="text/css">
+	
+		*{margin:0px; padding:0px; font-family:san-serif;}
+		
+		#sidebar{
+				position:fixed;
+				width:200px;
+				height:100%;
+				background:#151719;
+				left:-200px;
+				transition:all 500ms linear;
+				}
+		
+		#sidebar.active{
+						left:0px;
+						}
+		
+		#sidebar ul li{
+					color:rgba(230,230,230,0.9);
+					list-style-type:none;
+					padding:15px 10px;
+					border-bottom:1px solid rgba(100,100,100,0.3);
+					
+					}
+		
+	#sidebar .toggle-btn{
+						position:absolute;
+						left:230px;
+						top:20px;	
+						}
+	
+	#sidebar .toggle-btn span{
+							display:block;
+							width:30px;
+							height:5px;
+							background:rgb(0, 0, 238);
+							margin:5px 0px;
+							
+							}
+							
+	#sidebar ul li a{text-decoration:none;}
+	
+	</style>
+</head>
+<body>
+	<div id="sidebar">
+	
+		<div class="toggle-btn" onclick="toggleSidebar()">
+		
+			<span></span>
+			<span></span>
+			<span></span>
+		
+		</div>
+	
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="file:///D:/Image_Slider/3D_image_slider.html">Contact</a></li>
+		</ul>
+	</div>
+	
+	<script type="text/javascript">
+	
+		function toggleSidebar(){
+		
+			document.getElementById('sidebar').classList.toggle('active');
+		
+		}
+	
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Show & Hide</title>
+	<style type="text/css">
+	#main_content{
+			width:50%;
+			margin:5% auto;
+			padding:3%;
+			border-radius:10px;
+			border:1px solid blue;
+			background-image:url('pic/b.jpg');		
+		}
+	
+	.red{color:red;}
+	.italic{background-image:url('pic/c.jpg');
+	     background-image:cover;
+		font-weight:900px;
+	}
+	
+ul{list-style-type:none;
+	margin-left:220px;
+	padding:0;	
+	}
+	
+li{
+	display:inline;
+	}
+	
+	</style>
+	
+
+</head>
+<body>
+
+	
+	<h4 class="red italic">To keep out body fit we participate in games and sports. Game are types the outdoor and the indoor. Among the outdoor games cricket, football etc are popular.</h4>
+		
+	
+<div id="main_content">
+
+	<ul>
+		<li><a href="index6.html">Home</a></li>
+		<li><a href="index7.html">News</a></li>
+		<li><a href="index9.html">Contact</a></li>
+		<li><a href="index12.html">About</a></li>
+		<li><a href="index17.html">Others</a></li>
+	</ul>
+Cricket is said to be the Lord’s game. It is expensive and highly aristocratic. It is international and interesting. It gives pleasure to both the players and the spectators. It is full of thrill and excitement. So I like and enjoy it most. Hambledon, a village in England, was its birth place. From England it went to Australia. The first match was played between England and Australia. Gradually it went to the West Indies, South Africa, New Zealand, India, Pakistan, Bangladesh etc. <button class="show">Read more...</button>
+<p class="para">The game is played between two teams. Each team consists of  eleven played. Two umpires conduct the game. Cricket is played on a round playground. A smooth and grassy field is needed. A pitch of 22 yards is made at the center of the field. Two specially made wooden balls, two sets of stumps and some pads are required for the game. 
+At the beginning of the game tossing is necessary to decide the attackers and the attacked. The bawlers and the fielders are the attackers. The attacked try to defend it first and then score runs. If the hitted ball touches the boundary lines, four runs are scored. If it this over the boundary line, six runs are scored. The batsman may be out in many ways. When all the batsman of the attacked are out, the innings ends. Then the second innings starts after a few minutes. The team collecting more runs is declared winner.</p> 
+
+<button class="btn">Hide</button>
+</div>
+
+
+<script type="text/javascript" src="min.js"></script>
+
+
+<script type="text/javascript">
+
+        $('document').ready(function(){
+			
+			$('p').hide();
+			$('.btn').hide();
+			
+			$('.show').click(function(){
+				$('p').show(5000);
+				$('.show').hide();
+				$('.btn').show();
+			
+		$('.btn').click(function(){
+				$('p').hide(7000);
+				$('.show').show();
+				$('.btn').hide();
+			
+			    });
+			
+			});
+		});
+</script>
+
+</body>
+</html>

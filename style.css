@@ -1,0 +1,45 @@
+img{width:600px;
+	height:200px;
+	float:right;
+	margin:0 0 10px 10px;
+}
+
+
+.art{width:100px;
+	height:50px;
+	}
+	
+	.wow{width:600px;
+	height:50px;
+	}
+
+table,tr,td,th{color:white;
+		background-image:url("pic/v.jpg");
+		background-color:blue;
+	}
+	
+h2,ol,li,ul,dt,dl,dd{background-color:orange;
+	background-image:url("pic/a.jpg");
+	color:white;
+}
+/*
+p{line-height:50px;
+ word-spacing:20px;
+ letter-spacing:3px;
+ font-width:bolder;
+text-align:right;}
+h2{text-align:center;}*/
+
+figcaption{margin-left:200px;}
+
+.pic{
+background-color:yellow;
+background-image:url("pic/f.jpg");
+}
+
+p{background-image:url("pic/e.jpg")}
+
+div{background-color:pink;
+background-image:url("pic/g.jpg");
+}
+

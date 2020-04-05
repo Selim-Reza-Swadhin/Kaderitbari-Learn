@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Image Slider Design_web master</title>
+	<style type="text/css">
+		#container {
+			width: 700px;
+			height: 400px;
+			overflow: hidden;
+			margin: 0 auto;
+		}
+
+		#sliderbox {
+			position: relative;
+			width: 3200px;
+
+			animation-name: slideranimation;
+			animation-duration: 20s;
+			animation-iteration-count: infinite;
+		}
+
+		#sliderbox img {
+			float: left;
+			width: 800px;
+			height: 400px;
+		}
+
+
+		@keyframes slideranimation {
+
+			0% {
+				left: 0px;
+			}
+
+			20%/*4 second*/
+				{
+				left: 0px;
+			}
+
+			25%/*5 second*/
+				{
+				left: -800px;
+			}
+
+			45%/*9 second*/
+				{
+				left: -800px;
+			}
+
+			50%/*10 second*/
+				{
+				left: -1600px;
+			}
+			/*10s*/
+			70%/*14 second*/
+				{
+				left: -1600px;
+			}
+
+			75%/*15 second*/
+				{
+				left: -2400px;
+			}
+
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="container">
+
+		<div id="sliderbox">
+
+			<img src="pic/a.jpg" alt="" />
+			<img src="pic/b.jpg" alt="" />
+			<img src="pic/c.jpg" alt="" />
+			<img src="pic/l.jpg" alt="" />
+
+			<button class="btn" id="btn1"></button>
+			<button class="btn" id="btn2"></button>
+
+		</div>
+	</div>
+
+</body>
+
+</html>

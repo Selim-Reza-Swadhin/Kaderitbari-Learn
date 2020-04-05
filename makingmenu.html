@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Making Menu-71</title>
+	
+	<style type="text/css">
+	
+	#menu{
+		padding:0;
+		list-style-type:none;
+		width:960px;
+		background-color:#4E4E4E;
+		 border-bottom:5px solid orange;
+		 min-height:38px;
+		 margin:0 auto;
+		}
+		
+	#menu li{
+		 float:left;
+		 border-right:1px solid #605B5B;
+		 border-left:1px solid #2B2A2A;
+		 position:relative;
+		
+		}
+		
+	#menu li:last-child{border-right:none;}
+	
+	#menu li:first-child{border-left:none;}
+					
+	#menu li a{color:#fff;
+         list-style-type:none;
+		 text-decoration:none;
+		 background-color:#4E4E4E;
+		 padding:10px 20px;
+		 display:block;
+		 transition:0.3s all ease;
+		}
+		
+	#menu li a:hover{background-color:orange;}
+	
+	/* dropdown*/
+	#menu li ul{
+	           list-style-type:none;
+			   padding:0;
+			   position:absolute;
+			   left:-99999px;
+			   transition:all 0.3s ease;
+				}
+				
+	#menu li:hover ul{
+						left:0;
+						
+						}
+					
+	/*droppp*/
+	
+	#menu li ul li{
+					float:none;
+					border-right:none;
+					border-left:none;
+					border-top:1px solid #605B5B;
+		            border-bottom:1px solid #2B2A2A;
+					width:200px;
+					position:relative;
+					}
+					
+    /* subdropdown */
+	
+    #menu li ul li ul{
+					position:absolute;
+					top:-99999px;
+					}	
+	#menu li ul li:hover ul{
+						top:0;
+						left:200px;
+						} 
+
+
+	/* subdropdown 2 */	
+	
+	#menu li ul li ul li{
+					float:none;
+					border-right:none;
+					border-left:none;
+					border-top:1px solid yellow;
+		            border-bottom:1px solid #fff;
+					width:200px;
+					position:relative;
+					}
+
+	
+    #menu li ul li ul li ul{
+					position:absolute;
+					top:-99999px;
+					}	
+	#menu li ul li ul li:hover ul{
+						top:0;
+						left:400px;
+						background-color:blue;
+						}				
+    
+					
+	
+	</style>
+	
+	<!-- #menu li:nth-last-child(1){}
+	#menu li:nth-last-child(7){}
+	#menu li:nth-last-child(3){}
+	#menu li:nth-child(odd){}
+	#menu li:nth-child(even){}
+	#menu li:nth-child(3){}
+	#menu li:first-child{}
+	#menu li:last-child{} -->
+	
+</head>
+<body>
+	<ul id="menu">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">HTML</a></li>
+			<li><a href="#">CSS</a>
+				<ul>
+					<li><a href="#">Dropdown No.1</a></li>
+					<li><a href="#">Dropdown No.2</a></li>
+						<li><a href="#">Dropdown No.3</a>
+								<ul>
+								
+									<li><a href="#">Sub Dropdown No.1</a></li>
+									<li><a href="#">Sub Dropdown No.2</a></li>
+									<li><a href="#">Sub Dropdown No.3</a></li>
+									<li><a href="#">Sub Dropdown No.4</a></li>
+									<li><a href="#">Sub Dropdown No.5</a></li>
+								
+								</ul>
+						</li>
+					<li><a href="#">Dropdown No.4</a></li>
+					<li><a href="#">Dropdown No.5</a></li>
+					
+				</ul>
+			</li>
+		<li><a href="#">JavaScript</a></li>
+		<li><a href="#">PHP</a></li>
+		<li><a href="#">Bootstrap</a></li>
+	</ul>
+</body>
+</html>

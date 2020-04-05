@@ -1,0 +1,93 @@
+<html>
+<head>
+<style>
+	table,tr,th, td{
+					border-collapse:collapse;
+					border:1px solid blue;
+				 }
+	
+table{text-align:center;
+	margin:0 auto;
+	background-color:#ddd;}
+	
+.green{background-color:green;}
+.red{background-color:red;}
+.blue{background-color:blue;}
+.orange{background-color:orange;}
+
+.id1{background-color:red; color:black;}
+.id2{background-color:green; color:black;}
+.id3{background-color:pink; color:black;}
+.id4{background-color:orange; color:black;}
+	
+table caption{background-color:yellow;
+              border:1px solid green;
+	          color:red;
+			  }
+			  
+			  /*
+			background-repeat:repeat-x;
+			background-repeat:repeat-y;
+			background-size:cover;
+			background-size:contain;
+			background-size:200px 300px;
+			*/
+			
+
+	</style>
+	</head>
+<body>	
+    <table width="700" cellpadding="5">
+      <caption>Table Name</caption>
+			<thead>
+				<tr class="id1">
+						<th>Name</th>
+						<th>Class</th>
+						<th>Roll</th>
+						<th>Group</th>
+				</tr>
+	        </thead>
+	
+	<tfoot>
+		<tr class="id2">
+				<td class="text_left"colspan="3">Selim</td>
+				<td>D</td>
+			
+		</tr>
+	</tfoot>
+	
+	<tr  class="id3">
+			<td>A Kader</td>
+			<td>Nine</td>
+			<td>111</td>
+			<td>B</td>
+	</tr>
+	<tr class="id4">
+			<td colspan="1">Abdul</td>
+			<td>Ten</td>
+			<td  colspan="2">A</td>
+	</tr>
+	
+	<tr>
+			<td class="green">Kader</td>
+			<td class="red">Nine</td>
+			<td class="blue">111</td>
+			<td class="orange">B</td>
+	</tr>
+		
+	<tr>
+			<td>Tonoy</td>
+			<td colspan="2">Eight</td>
+			<td>112</td>
+			
+	</tr>
+		<tr>
+			<td>Kader</td>
+			<td>Nine</td>
+			<td>111</td>
+			<td>C</td>
+	</tr>
+		
+	</table>
+</body>
+</html>
